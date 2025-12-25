@@ -8,7 +8,7 @@ import { useState } from "react";
 import { cx } from "@/src/utils";
 
 const Header = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, mounted } = useTheme();
   const [click, setClick] = useState(false);
 
   const toggle = () => {
@@ -63,8 +63,9 @@ const Header = () => {
           <button onClick={toggleTheme}
             className={cx("w-8 h-8 ease flex items-center justify-center rounded-full p-1", theme === "light" ? "bg-dark text-light" : "bg-light text-dark")}
             aria-label="theme-switcher"
+            disabled={!mounted}
           >
-            {theme === "light" ? <MoonIcon className={"fill-dark"} /> : <SunIcon className={"fill-dark"} />}
+            {mounted ? (theme === "light" ? <MoonIcon className={"fill-dark"} /> : <SunIcon className={"fill-dark"} />) : <div className="w-4 h-4 bg-gray-400 rounded"></div>}
           </button>
         </div>
       </nav>
@@ -86,8 +87,9 @@ const Header = () => {
         <button onClick={toggleTheme}
           className={cx("w-6 h-6 ease ml-3 flex items-center justify-center rounded-full p-1", theme === "light" ? "bg-dark text-light" : "bg-light text-dark")}
           aria-label="theme-switcher"
+          disabled={!mounted}
         >
-          {theme === "light" ? <MoonIcon className={"fill-dark"} /> : <SunIcon className={"fill-dark"} />}
+          {mounted ? (theme === "light" ? <MoonIcon className={"fill-dark"} /> : <SunIcon className={"fill-dark"} />) : <div className="w-4 h-4 bg-gray-400 rounded"></div>}
         </button>
       </nav>
 
@@ -98,11 +100,12 @@ const Header = () => {
         <Link href="/news" className="px-2 py-1 hover:text-accent transition-colors">News</Link>
         <Link href="/topics" className="px-2 py-1 hover:text-accent transition-colors">Topics</Link>
         <Link href="/about" className="px-2 py-1 hover:text-accent transition-colors">About</Link>
-        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" : "bg-light text-dark")}
+        <button onClick={toggleTheme}
+          className={cx("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", theme === "light" ? "bg-dark text-light" : "bg-light text-dark")}
           aria-label="theme-switcher"
+          disabled={!mounted}
         >
-          {mode === "light" ? <MoonIcon className={"fill-dark"} /> : <SunIcon className={"fill-dark"} />}
+          {mounted ? (theme === "light" ? <MoonIcon className={"fill-dark"} /> : <SunIcon className={"fill-dark"} />) : <div className="w-4 h-4 bg-gray-400 rounded"></div>}
         </button>
       </nav>
 
