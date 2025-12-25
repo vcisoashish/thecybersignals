@@ -2,14 +2,25 @@
 import React, { useEffect, useState } from "react";
 import { createClient } from '@supabase/supabase-js'
 
+// Check if Supabase environment variables are available
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+const supabase = supabaseUrl && supabaseAnonKey 
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : null;
 
 const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
   const [views, setViews] = useState(0);
 
   useEffect(() => {
     const incrementView = async () => {
+      // Skip if Supabase is not configured
+      if (!supabase) {
+        console.warn("Supabase not configured. View counting disabled.");
+        return;
+      }
+
       try {
         let { error } = await supabase.rpc("increment", {
           slug_text:slug ,
@@ -34,6 +45,12 @@ const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
 
   useEffect(() => {
     const getViews = async () => {
+      // Skip if Supabase is not configured
+      if (!supabase) {
+        setViews(0);
+        return;
+      }
+
       try {
         let { data, error } = await supabase
   .from('views')
@@ -44,7 +61,6 @@ const ViewCounter = ({ slug, noCount = false, showCount = true }) => {
         if (error){
             console.error("Error incrementing view count inside try block:", error)
         };
-
 
         setViews(data ? data.count : 0)
         

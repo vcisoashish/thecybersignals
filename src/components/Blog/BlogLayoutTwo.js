@@ -4,10 +4,19 @@ import Link from "next/link";
 import React from "react";
 
 const BlogLayoutTwo = ({ blog }) => {
+  // Add error handling for missing blog data
+  if (!blog || !blog.title || !blog.image) {
+    return null;
+  }
+
+  const blogUrl = blog.url || `/blogs/${blog.slug}`;
+  const blogTag = blog.tags?.[0] || 'Article';
+  const publishedDate = blog.publishedAt ? new Date(blog.publishedAt) : new Date();
+
   return (
     <div className="group grid grid-cols-12 gap-4 items-center text-dark dark:text-light">
       <Link
-        href={blog.url}
+        href={blogUrl}
         className=" col-span-12  lg:col-span-4 h-full rounded-xl overflow-hidden"
       >
         <Image
@@ -24,9 +33,9 @@ const BlogLayoutTwo = ({ blog }) => {
 
       <div className="col-span-12  lg:col-span-8 w-full">
         <span className="inline-block w-full uppercase text-accent dark:text-accentDark font-semibold text-xs sm:text-sm">
-          {blog.tags[0]}
+          {blogTag}
         </span>
-        <Link href={blog.url} className="inline-block my-1">
+        <Link href={blogUrl} className="inline-block my-1">
           <h2 className="font-semibold capitalize text-base sm:text-lg">
             <span
               className="bg-gradient-to-r from-accent/50 dark:from-accentDark/50 to-accent/50 dark:to-accentDark/50 bg-[length:0px_6px]
@@ -38,7 +47,7 @@ const BlogLayoutTwo = ({ blog }) => {
         </Link>
 
         <span className="inline-block w-full capitalize text-gray dark:text-light/50 font-semibold  text-xs sm:text-base">
-          {format(new Date(blog.publishedAt), "MMMM dd, yyyy")}
+          {format(publishedDate, "MMMM dd, yyyy")}
         </span>
       </div>
     </div>

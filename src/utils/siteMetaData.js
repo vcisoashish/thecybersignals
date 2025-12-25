@@ -1,7 +1,7 @@
 // please update required information
 const siteMetadata = {
     title: 'Next.js Blog With Tailwind CSS and Contentlayer',
-    author: 'CodeBucks',
+    author: 'The Cyber Signals',
     headerTitle: 'Next.js Blog',
     description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
     language: 'en-us',
@@ -10,12 +10,12 @@ const siteMetadata = {
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'codebucks27@gmail.com', 
-    github: 'https://github.com/codebucks27',
-    twitter: 'https://twitter.com/code_bucks',
+    github: 'https://github.com/vcisoashish',
+    twitter: 'https://x.com/vcisoashish',
     facebook: 'https://facebook.com',
     youtube: 'https://youtube.com/codebucks',
-    linkedin: 'https://www.linkedin.com/in/codebucks/',
-    dribbble: 'https://www.dribbble.com',
+    linkedin: 'https://www.linkedin.com/in/architect-ashish/',
+    dribbble: 'https://dribbble.com/vcisoashish',
     locale: 'en-US',
   }
   
