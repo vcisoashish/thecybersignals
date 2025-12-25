@@ -110,7 +110,7 @@ export default function News() {
               <div className="text-6xl mb-4">📰</div>
               <h3 className="text-xl font-bold text-dark dark:text-light mb-2">No News Articles Yet</h3>
               <p className="text-dark/70 dark:text-light/70">
-                We're working on bringing you the latest cybersecurity news. Check back soon!
+                We&apos;re working on bringing you the latest cybersecurity news. Check back soon!
               </p>
             </div>
           )}
