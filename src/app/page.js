@@ -5,7 +5,6 @@ import Link from "next/link";
 import { slug } from "github-slugger";
 import { useEffect, useState } from "react";
 import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
-import CyberPredictionPopup from "@/src/components/CyberPredictionPopup";
 
 // Breaking News Component
 const BreakingNews = () => {
@@ -364,9 +363,7 @@ const CyberSignalJournal = ({ blogs }) => {
 };
 
 export default function Home() {
-  const [showPopup, setShowPopup] = useState(false);
 
-  const handleStatsClick = () => {
     const alreadyShown = sessionStorage.getItem('cyberPredictionPopupShown');
     if (!alreadyShown) {
       setShowPopup(true);
@@ -379,14 +376,12 @@ export default function Home() {
       <div className="w-full max-w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mt-8">
           <div className="lg:col-span-4 px-5 sm:px-10">
-            <BlogDirectory blogs={blogs} onStatsClick={handleStatsClick} />
           </div>
           <div className="lg:col-span-1 pr-5 sm:pr-10">
             <CyberSignalJournal blogs={blogs} />
           </div>
         </div>
       </div>
-      {showPopup && <CyberPredictionPopup onClose={() => setShowPopup(false)} />}
     </main>
   );
 }
