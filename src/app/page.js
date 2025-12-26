@@ -273,6 +273,7 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                         {tag}
                       </Link>
                     ))}
+                  <Link href={`/blogs/${blog.slug}`}>
                   </div>
                     <h3 className="text-sm font-semibold mb-1 line-clamp-1">
                       {blog.title}

@@ -131,6 +131,8 @@ const BlogDirectory = ({ blogs }) => {
                       </Link>
                     ))}
                   </div>
+                  <Link href={`/blogs/${blog.slug}`}>
+                  <Link href={}>
                     <h3 className="text-lg font-semibold mb-2 line-clamp-2">
                       {blog.title}
                     </h3>
