@@ -293,11 +293,11 @@ export default function EmailSetup() {
                     <p className="text-red-700 dark:text-red-300 text-sm font-medium mb-2">
                       Setup Instructions:
                     </p>
-                    {testResult.instructions.resend && (
+                    {testResult?.instructions?.resend && (
                       <div className="mb-3">
                         <p className="text-red-600 dark:text-red-400 text-sm font-medium mb-1">Resend Setup:</p>
                         <ul className="text-red-600 dark:text-red-400 text-xs space-y-1 ml-4">
-                          {testResult.instructions?.resend ? Object.entries(testResult.instructions.resend).map(([key, value]) => (
+                          {testResult.instructions?.resend ? Object.entries(testResult?.instructions?.resend).map(([key, value]) => (
                             <li key={key}>
                               <strong>{key.replace('step', 'Step ')}:</strong> {value}
                             </li>
@@ -305,11 +305,11 @@ export default function EmailSetup() {
                         </ul>
                       </div>
                     )}
-                    {testResult.instructions.gmail && (
+                    {testResult?.instructions?.gmail && (
                       <div className="mb-3">
                         <p className="text-red-600 dark:text-red-400 text-sm font-medium mb-1">Gmail Setup:</p>
                         <ul className="text-red-600 dark:text-red-400 text-xs space-y-1 ml-4">
-                          {testResult.instructions?.gmail ? Object.entries(testResult.instructions.gmail).map(([key, value]) => (
+                          {testResult.instructions?.gmail ? Object.entries(testResult?.instructions?.gmail).map(([key, value]) => (
                             <li key={key}>
                               <strong>{key.replace('step', 'Step ')}:</strong> {value}
                             </li>
@@ -317,7 +317,7 @@ export default function EmailSetup() {
                         </ul>
                       </div>
                     )}
-                    {!testResult.instructions.resend && !testResult.instructions.gmail && (
+                    {!testResult?.instructions?.resend && !testResult?.instructions?.gmail && (
                       <ul className="text-red-600 dark:text-red-400 text-xs space-y-1">
                         {testResult.instructions ? Object.entries(testResult.instructions).map(([key, value]) => (
                           <li key={key}>
