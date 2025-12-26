@@ -1,27 +1,274 @@
 'use client';
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
 import { blogs } from "@/.velite/generated";
 import Link from "next/link";
 import { slug } from "github-slugger";
 import { useState } from "react";
 import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
 // Simple Breaking News Component
 const BreakingNews = () => {
   return (
     <div className="bg-red-600 text-white py-2 px-4 text-sm font-medium">
       <span className="inline-block mr-2">🔴 BREAKING:</span>
-      Breaking: Oktacron - Cyber Security RSS News Aggregator • 1 hours ago
     </div>
   );
 };
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
 // Simple Blog Directory Component
 const BlogDirectory = ({ blogs }) => {
   const sortedBlogs = blogs
     .filter(blog => blog.isPublished !== false)
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
   const blogsByCategory = {};
   sortedBlogs.forEach(blog => {
     if (blog.tags && Array.isArray(blog.tags)) {
@@ -39,6 +286,68 @@ const BlogDirectory = ({ blogs }) => {
     }
   });
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { 
@@ -48,6 +357,68 @@ const BlogDirectory = ({ blogs }) => {
     });
   };
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
   const trendingTopics = [
     "Zero Trust", "SASE / SSE", "Ransomware 3.0", "AI Security", "Insider Threat",
     "Quantum-Safe", "OT / IoT Security", "Supply-Chain Attacks", "Cloud Data Security",
@@ -56,6 +427,68 @@ const BlogDirectory = ({ blogs }) => {
     "Security research", "AI in Security", "Cyber strategy 2026"
   ];
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
   return (
     <div className="space-y-8">
       {/* Trending Topics */}
@@ -73,6 +506,68 @@ const BlogDirectory = ({ blogs }) => {
         </div>
       </div>
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
       {/* Stats */}
       <div className="text-center bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-6">
         <div className="flex items-center justify-center gap-4 mb-4">
@@ -80,37 +575,197 @@ const BlogDirectory = ({ blogs }) => {
           <span className="text-gray-600 dark:text-gray-300">Articles</span>
           <span className="text-gray-400">|</span>
           <span className="text-2xl font-bold text-accent">{Object.keys(blogsByCategory).length}</span>
-          <span className="text-gray-600 dark:text-gray-300">Categories</span>
+
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
         </div>
-        <button className="bg-gradient-to-r from-accent to-accent/80 text-white px-6 py-2 rounded-lg hover:from-accent/90 hover:to-accent/70 transition-all duration-200 font-medium">
-          ✨ Click for insights
-        </button>
+      </div>
       </div>
 
       {/* Categories */}
       <div>
-        <h2 className="text-2xl font-bold mb-6">Categories</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {Object.entries(blogsByCategory)
-            .sort(([a], [b]) => a.localeCompare(b))
-            .slice(0, 6)
-            .map(([category, categoryBlogs]) => (
-              <Link 
-                key={category}
-                href={`/categories/${category}`}
-                className="bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group"
-              >
-                <h3 className="font-semibold capitalize group-hover:text-accent transition-colors">
-                  {category.replace(/-/g, ' ')}
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                  {categoryBlogs.length} articles
-                </p>
-              </Link>
-            ))}
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
         </div>
       </div>
+      </div>
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
       {/* Latest Articles */}
       <div>
         <h2 className="text-2xl font-bold mb-6">Latest Articles</h2>
@@ -165,6 +820,68 @@ const BlogDirectory = ({ blogs }) => {
   );
 };
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
 // Simple Cyber Signal Journal Component
 const CyberSignalJournal = ({ blogs }) => {
   const journalMessages = [
@@ -192,11 +909,135 @@ const CyberSignalJournal = ({ blogs }) => {
     }
   ];
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
   const featuredBlogs = blogs
     .filter(blog => blog.isPublished !== false)
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
     .slice(0, 5);
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
   return (
     <div className="space-y-6">
       <div className="bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-6">
@@ -225,6 +1066,68 @@ const CyberSignalJournal = ({ blogs }) => {
           ))}
         </div>
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
         <div className="space-y-4">
           <h4 className="font-medium text-accent">Featured Articles</h4>
           {featuredBlogs.map((blog, index) => (
@@ -251,6 +1154,68 @@ const CyberSignalJournal = ({ blogs }) => {
           ))}
         </div>
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
         <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
           <h4 className="font-medium text-accent mb-3">Intelligence Brief</h4>
           <div className="grid grid-cols-2 gap-3 text-center">
@@ -273,6 +1238,68 @@ const CyberSignalJournal = ({ blogs }) => {
           </div>
         </div>
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
         <div className="mt-6 p-4 bg-gradient-to-r from-accent/10 to-accent/5 rounded-lg text-center">
           <h4 className="text-sm font-semibold mb-2">Need Expert Consultation?</h4>
           <p className="text-xs text-gray-600 dark:text-gray-300 mb-3">
@@ -290,6 +1317,68 @@ const CyberSignalJournal = ({ blogs }) => {
   );
 };
 
+      {/* Categories */}
+      <div>
+        <h2 className=text-2xl font-bold mb-6>Categories</h2>
+        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+          <Link 
+            href=/categories/offensive-operations
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Offensive Operations
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/ai-security-adversarial-ml
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              AI Security & Adversarial ML
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cloud-infrastructure-defense
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cloud & Infrastructure Defense
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/quantum-future-encryption
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Quantum & Future Encryption
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-briefing-news-intel
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber Briefing (News & Intel)
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/strategy-law-compliance
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Strategy, Law & Compliance
+            </h3>
+          </Link>
+          <Link 
+            href=/categories/cyber-signal-academy
+            className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
+          >
+            <h3 className=font-semibold group-hover:text-accent transition-colors>
+              Cyber-Signal-Academy
+            </h3>
+          </Link>
+        </div>
+      </div>
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
