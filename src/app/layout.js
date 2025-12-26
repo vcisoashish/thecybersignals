@@ -4,6 +4,8 @@ import { Inter, Manrope } from "next/font/google";
 import Header from "@/src/components/Header";
 import Footer from "../components/Footer";
 import { ThemeProvider } from "@/src/components/ThemeProvider";
+import AnimatedBackground from "@/src/components/AnimatedBackground";
+import GlobalCyberPredictionPopup from "@/src/components/GlobalCyberPredictionPopup";
 import siteMetadata from "../utils/siteMetaData";
 
 const inter = Inter({
@@ -60,13 +62,18 @@ export default function RootLayout({ children }) {
         className={cx(
           inter.variable,
           manrope.variable,
-          "font-mr bg-light dark:bg-dark"
+          "font-mr bg-light relative"
         )}
+        suppressHydrationWarning={true}
       >
+        <AnimatedBackground />
         <ThemeProvider>
-          <Header />
-          {children}
-          <Footer />
+          <div className="relative z-10">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+          <GlobalCyberPredictionPopup />
         </ThemeProvider>
       </body>
     </html>

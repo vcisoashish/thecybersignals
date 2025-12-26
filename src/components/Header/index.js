@@ -48,7 +48,7 @@ const Header = () => {
         }}
       >
         <Link href="/home" className="py-1 hover:text-accent transition-colors">Home</Link>
-        <Link href="/features" className="py-1 hover:text-accent transition-colors">Features</Link>
+        <Link href="/features" className="py-1 hover:text-accent transition-colors">Products</Link>
         <Link href="/insights" className="py-1 hover:text-accent transition-colors">Insights</Link>
         <Link href="/cloud-security" className="py-1 hover:text-accent transition-colors">CloudSec</Link>
         <Link href="/ai-security" className="py-1 hover:text-accent transition-colors">AI & Security</Link>
@@ -73,7 +73,7 @@ const Header = () => {
       {/* Desktop Navigation */}
 <nav className="max-w-6xl py-2 px-6 border border-solid border-dark rounded-full font-medium text-sm items-center hidden lg:flex fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50">
         <Link href="/" className="px-3 py-1 hover:text-accent transition-colors">Home</Link>
-        <Link href="/features" className="px-3 py-1 hover:text-accent transition-colors">Features</Link>
+        <Link href="/features" className="px-3 py-1 hover:text-accent transition-colors">Products</Link>
         <Link href="/insights" className="px-3 py-1 hover:text-accent transition-colors">Insights</Link>
         <Link href="/cloud-security" className="px-3 py-1 hover:text-accent transition-colors">CloudSec</Link>
         <Link href="/ai-security" className="px-3 py-1 hover:text-accent transition-colors whitespace-nowrap">AI & Security</Link>
@@ -110,6 +110,29 @@ const Header = () => {
       </nav>
 
       <div className="hidden sm:flex items-center">
+        <Link href="/contact" className="relative inline-block w-12 h-12 mr-4 group">
+          {/* Blinking Green Popup */}
+          <div className="absolute -top-2 -right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full animate-blink z-10 whitespace-nowrap">
+            Contact Us
+          </div>
+          
+          {/* Rotating Sphere Button */}
+          <div className="w-full h-full bg-gradient-to-br from-dark via-gray-700 to-dark dark:from-light dark:via-gray-300 dark:to-light rounded-full shadow-lg transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl animate-spin-slow flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-tr from-accent to-accentDark dark:from-accentDark dark:to-accent rounded-full flex items-center justify-center animate-pulse">
+              <svg className="w-5 h-5 text-light dark:text-dark" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+            </div>
+          </div>
+          
+          {/* Hover Tooltip */}
+          <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            <span className="text-xs font-medium bg-dark dark:bg-light text-light dark:text-dark px-2 py-1 rounded shadow-lg">
+              Contact Us
+            </span>
+          </div>
+        </Link>
         <a href={siteMetadata.linkedin} rel="noopener noreferrer" className="inline-block w-6 h-6 mr-4" aria-label="Reach out to me via LinkedIn" target="_blank">
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
