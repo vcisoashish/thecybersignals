@@ -273,8 +273,8 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                         {tag}
                       </Link>
                     ))}
-                  <Link href={`/blogs/${blog.slug}`}>
                   </div>
+                  <Link href={`/blogs/${blog.slug}`} className="group-hover:text-accent transition-colors">
                     <h3 className="text-sm font-semibold mb-1 line-clamp-1">
                       {blog.title}
                     </h3>
@@ -330,11 +330,7 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                         <h3 className="font-semibold mb-1 line-clamp-2 text-xs">
                           {blog.title}
                         </h3>
-                      </Link>
-                      <p className="text-gray-600 dark:text-gray-300 text-xs line-clamp-2 mb-2">
-                        {blog.description}
-                      </p>
-                      <div className="flex items-center justify-between">
+                          <p className="text-gray-600 dark:text-gray-300 text-xs line-clamp-2 mb-2">
                         <span className="text-xs text-gray-500 dark:text-gray-400">
                           {blog.author}
                         </span>
@@ -343,8 +339,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                         >
                           Read →
                         </Link>
-                      </div>
-                    </div>
                   </div>
                 ))}
               </div>

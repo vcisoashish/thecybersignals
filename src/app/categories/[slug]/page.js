@@ -131,10 +131,8 @@ const BlogDirectory = ({ blogs }) => {
                       </Link>
                     ))}
                   </div>
-                  <Link href={`/blogs/${blog.slug}`}>
-                  <Link href={}>
+                  <Link href={`/blogs/${blog.slug}`} className="group-hover:text-accent transition-colors">
                     <h3 className="text-lg font-semibold mb-2 line-clamp-2">
-                      {blog.title}
                     </h3>
                   </Link>
                   <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-2 mb-3">
@@ -190,11 +188,7 @@ const BlogDirectory = ({ blogs }) => {
                         <h3 className="font-semibold mb-2 line-clamp-2 text-sm">
                           {blog.title}
                         </h3>
-                      </Link>
-                      <p className="text-gray-600 dark:text-gray-300 text-xs line-clamp-3 mb-3">
-                        {blog.description}
-                      </p>
-                      <div className="flex items-center justify-between">
+                          <p className="text-gray-600 dark:text-gray-300 text-xs line-clamp-3 mb-3">
                         <span className="text-xs text-gray-500 dark:text-gray-400">
                           By {blog.author || 'The Cyber Signals'}
                         </span>
@@ -204,8 +198,6 @@ const BlogDirectory = ({ blogs }) => {
                         >
                           Read →
                         </Link>
-                      </div>
-                    </div>
                   </div>
                 ))}
               </div>
