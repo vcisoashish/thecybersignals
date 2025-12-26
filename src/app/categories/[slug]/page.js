@@ -198,14 +198,6 @@ const BlogDirectory = ({ blogs }) => {
                         >
                           Read →
                         </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-      </div>
-
-      {/* Footer CTA */}
       <div className="mt-16 text-center bg-gradient-to-r from-accent/10 to-accent/5 rounded-lg p-8">
         <h3 className="text-xl font-semibold mb-2">Stay Updated</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -219,11 +211,6 @@ const BlogDirectory = ({ blogs }) => {
           inputPlaceholder="Enter your email for updates"
         />
       </div>
-    </div>
-  );
-};
-
-const CategoryPage = ({ params }) => {
 // Separating logic to create list of categories from all blogs
 const allCategories = ["all"]; // Initialize with 'all' category
 allBlogs.forEach(blog => {

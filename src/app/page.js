@@ -339,14 +339,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                         >
                           Read →
                         </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-      </div>
-
-      {/* Compact Footer CTA */}
       <div className="mt-8 text-center bg-gradient-to-r from-accent/10 to-accent/5 rounded-lg p-4">
         <h3 className="text-sm font-semibold mb-1">Stay Updated</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-2 text-xs">
@@ -360,12 +352,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
           inputPlaceholder="Enter your email"
         />
       </div>
-    </div>
-  );
-};
-
-// Cyber Signal Journal Component
-const CyberSignalJournal = ({ blogs }) => {
   // Get featured/pinned blogs (latest 5 from different categories)
   const featuredBlogs = blogs
     .filter(blog => blog.isPublished)
