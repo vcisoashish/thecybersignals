@@ -9,7 +9,6 @@ const siteMetadata = {
     siteUrl: 'https://thecybersignals.vercel.app', // your website URL - UPDATE THIS AFTER DEPLOYMENT
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
     github: 'https://github.com/thecybersignals-commits/cybersignal-samples',
     twitter: 'https://x.com/vcisoashish',
     facebook: 'https://facebook.com',

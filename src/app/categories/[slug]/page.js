@@ -4,7 +4,6 @@ import Categories from "@/src/components/Blog/Categories";
 import { slug } from "github-slugger";
 import Link from "next/link";
 import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
 
 // const slugger = new GithubSlugger();
 
@@ -38,7 +37,6 @@ export async function generateMetadata({ params }) {
 const BlogDirectory = ({ blogs }) => {
   // Sort blogs by publication date (most recent first)
   const sortedBlogs = blogs
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   // Group blogs by category
@@ -57,7 +55,6 @@ const BlogDirectory = ({ blogs }) => {
         }
       });
     }
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
   });
 
   // Format date function
@@ -83,7 +80,6 @@ const BlogDirectory = ({ blogs }) => {
         </p>
         <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mb-8">
           <p className="text-sm text-accent font-medium">
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
           </p>
         </div>
       </div>
@@ -126,7 +122,6 @@ const BlogDirectory = ({ blogs }) => {
                     <span className="text-xs text-gray-500 dark:text-gray-400">
                       {formatDate(blog.publishedAt)}
                     </span>
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                       <Link 
                         key={tag}
                         href={`/categories/${slug(tag)}`}
@@ -136,7 +131,6 @@ const BlogDirectory = ({ blogs }) => {
                       </Link>
                     ))}
                   </div>
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     <h3 className="text-lg font-semibold mb-2 line-clamp-2">
                       {blog.title}
                     </h3>
@@ -145,14 +139,12 @@ const BlogDirectory = ({ blogs }) => {
                     {blog.description}
                   </p>
                   <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     <span>•</span>
                     <span>5 min read</span>
                   </div>
                 </div>
                 <div className="flex-shrink-0">
                   <Link 
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     className="inline-flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors text-sm font-medium"
                   >
                     Read Article →
@@ -193,7 +185,6 @@ const BlogDirectory = ({ blogs }) => {
                           {formatDate(blog.publishedAt)}
                         </span>
                       </div>
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                         <h3 className="font-semibold mb-2 line-clamp-2 text-sm">
                           {blog.title}
                         </h3>
@@ -207,7 +198,6 @@ const BlogDirectory = ({ blogs }) => {
                         </span>
                         <Link 
                           href={getCleanBlogUrl(blog.slug)}
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                           className="text-xs text-accent hover:text-accent/80 font-medium"
                         >
                           Read →

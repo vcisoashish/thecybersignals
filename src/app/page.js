@@ -6,7 +6,6 @@ import { slug } from "github-slugger";
 import { useEffect, useState } from "react";
 import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
 import CyberPredictionPopup from "@/src/components/CyberPredictionPopup";
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
 
 // Breaking News Component with dynamic data fetching
 const BreakingNews = () => {
@@ -275,7 +274,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                       </Link>
                     ))}
                   </div>
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     <h3 className="text-sm font-semibold mb-1 line-clamp-1">
                       {blog.title}
                     </h3>
@@ -287,7 +285,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                 </div>
                 <div className="flex-shrink-0">
                   <Link 
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     className="inline-flex items-center px-2 py-1 bg-accent text-white rounded text-xs font-medium hover:bg-accent/90 transition-colors"
                   >
                     Read →
@@ -329,7 +326,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                           {formatDate(blog.publishedAt)}
                         </span>
                       </div>
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                         <h3 className="font-semibold mb-1 line-clamp-2 text-xs">
                           {blog.title}
                         </h3>
@@ -342,7 +338,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                           {blog.author}
                         </span>
                         <Link 
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                           className="text-xs text-accent hover:text-accent/80 font-medium"
                         >
                           Read →
@@ -488,7 +483,6 @@ const CyberSignalJournal = ({ blogs }) => {
         <div className="space-y-3">
           {featuredBlogs.map((blog, index) => (
             <div key={blog.slug} className="group">
->>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
                     <span className="text-xs font-bold text-accent">#{index + 1}</span>
