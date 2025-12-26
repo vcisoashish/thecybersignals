@@ -3,75 +3,21 @@
 import { blogs } from "@/.velite/generated";
 import Link from "next/link";
 import { slug } from "github-slugger";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
 
-// Breaking News Component
+// Simple Breaking News Component
 const BreakingNews = () => {
-  const [newsItems, setNewsItems] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  const fetchBreakingNews = async () => {
-    try {
-      const response = await fetch('/api/breaking-news');
-      const data = await response.json();
-      
-      if (data.success && data.news.length > 0) {
-        setNewsItems(data.news);
-      } else {
-        setNewsItems([{
-          id: 1,
-          title: "Breaking: Oktacron - Cyber Security RSS News Aggregator",
-          url: "#",
-          timestamp: "1 hours ago",
-          source: "window"
-        }]);
-      }
-    } catch (error) {
-      setNewsItems([{
-        id: 1,
-        title: "Breaking: Oktacron - Cyber Security RSS News Aggregator",
-        url: "#",
-        timestamp: "1 hours ago",
-        source: "window"
-      }]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchBreakingNews();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="bg-red-600 text-white py-2 px-4 text-sm font-medium animate-pulse">
-        <span className="inline-block mr-2">🔴 BREAKING:</span>
-        Loading latest security alerts...
-      </div>
-    );
-  }
-
   return (
-    <div className="bg-red-600 text-white py-2 px-4 text-sm font-medium overflow-hidden">
-      <div className="flex items-center animate-marquee whitespace-nowrap">
-        <span className="inline-block mr-4 font-bold">🔴 BREAKING</span>
-        {newsItems.map((item, index) => (
-          <span key={item.id} className="inline-block mr-8">
-            <Link href={item.url} className="hover:underline">
-              {item.title} • {item.timestamp}
-            </Link>
-            {index < newsItems.length - 1 && <span className="ml-8">|</span>}
-          </span>
-        ))}
-      </div>
+    <div className="bg-red-600 text-white py-2 px-4 text-sm font-medium">
+      <span className="inline-block mr-2">🔴 BREAKING:</span>
+      Breaking: Oktacron - Cyber Security RSS News Aggregator • 1 hours ago
     </div>
   );
 };
 
-// Blog Directory Component
-const BlogDirectory = ({ blogs, onStatsClick }) => {
+// Simple Blog Directory Component
+const BlogDirectory = ({ blogs }) => {
   const sortedBlogs = blogs
     .filter(blog => blog.isPublished !== false)
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
@@ -136,10 +82,7 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
           <span className="text-2xl font-bold text-accent">{Object.keys(blogsByCategory).length}</span>
           <span className="text-gray-600 dark:text-gray-300">Categories</span>
         </div>
-        <button 
-          onClick={onStatsClick}
-          className="bg-gradient-to-r from-accent to-accent/80 text-white px-6 py-2 rounded-lg hover:from-accent/90 hover:to-accent/70 transition-all duration-200 font-medium"
-        >
+        <button className="bg-gradient-to-r from-accent to-accent/80 text-white px-6 py-2 rounded-lg hover:from-accent/90 hover:to-accent/70 transition-all duration-200 font-medium">
           ✨ Click for insights
         </button>
       </div>
@@ -218,26 +161,11 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
           ))}
         </div>
       </div>
-
-      {/* Newsletter */}
-      <div className="bg-gradient-to-r from-accent/10 to-accent/5 rounded-lg p-8 text-center">
-        <h3 className="text-xl font-semibold mb-2">Stay Updated</h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4">
-          Get cybersecurity insights delivered to your inbox
-        </p>
-        <NewsletterButton 
-          className="bg-accent text-white px-6 py-2 rounded-lg hover:bg-accent/90 transition-colors"
-          text="Subscribe"
-          source="homepage-main"
-          showInput={true}
-          inputPlaceholder="Enter your email"
-        />
-      </div>
     </div>
   );
 };
 
-// Cyber Signal Journal Component
+// Simple Cyber Signal Journal Component
 const CyberSignalJournal = ({ blogs }) => {
   const journalMessages = [
     {
@@ -363,15 +291,13 @@ const CyberSignalJournal = ({ blogs }) => {
 };
 
 export default function Home() {
-
-
   return (
     <main className="flex flex-col items-center justify-center">
       <BreakingNews />
       <div className="w-full max-w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mt-8">
           <div className="lg:col-span-4 px-5 sm:px-10">
-            <BlogDirectory blogs={blogs} onStatsClick={() => {}} />
+            <BlogDirectory blogs={blogs} />
           </div>
           <div className="lg:col-span-1 pr-5 sm:pr-10">
             <CyberSignalJournal blogs={blogs} />
