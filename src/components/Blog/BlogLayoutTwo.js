@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { getCleanBlogUrl } from "@/src/utils/urlMappings";
 
 const BlogLayoutTwo = ({ blog }) => {
   // Add error handling for missing blog data
@@ -9,7 +10,7 @@ const BlogLayoutTwo = ({ blog }) => {
     return null;
   }
 
-  const blogUrl = blog.url || `/blogs/${blog.slug}`;
+  const blogUrl = getCleanBlogUrl(blog.slug);
   const blogTag = blog.tags?.[0] || 'Article';
   const publishedDate = blog.publishedAt ? new Date(blog.publishedAt) : new Date();
 

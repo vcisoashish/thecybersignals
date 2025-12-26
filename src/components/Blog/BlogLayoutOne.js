@@ -3,6 +3,7 @@ import Tag from "../Elements/Tag";
 import Link from "next/link";
 import Image from "next/image";
 import { slug } from "github-slugger";
+import { getCleanBlogUrl } from "@/src/utils/urlMappings";
 
 const BlogLayoutOne = ({ blog }) => {
   return (
@@ -27,7 +28,7 @@ const BlogLayoutOne = ({ blog }) => {
         <Tag link={`/categories/${slug(blog.tags[0])}`} name={blog.tags[0]}
         className="px-6 text-xs  sm:text-sm py-1 sm:py-2 !border "
         />
-        <Link href={blog.url} className="mt-6">
+        <Link href={getCleanBlogUrl(blog.slug)} className="mt-6">
           <h2 className="font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-light mt-2 sm:mt-4">
             <span
               className="bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] dark:from-accentDark/50 dark:to-accentDark/50

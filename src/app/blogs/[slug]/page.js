@@ -6,6 +6,8 @@ import { blogs } from '@/.velite/generated'
 import { slug as slugify } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import AISecurityBackground from "@/src/components/AISecurityBackground";
+import { getCleanBlogUrl } from "@/src/utils/urlMappings";
 
 export async function generateStaticParams() {
   return blogs.map((blog) => ({ slug: blog.slug }));
@@ -40,7 +42,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: blog.title,
       description: blog.description,
-      url: siteMetadata.siteUrl + blog.url,
+      url: siteMetadata.siteUrl + getCleanBlogUrl(blog.slug),
       siteName: siteMetadata.title,
       locale: "en_US",
       type: "article",
@@ -124,8 +126,11 @@ export default async function BlogPage({ params }) {
       }]
   }
 
+  const isAISecurityPost = blog.slug === 'cybersecurity-predictions-2026-ai-driven-threat-landscape';
+
   return (
     <>
+    {isAISecurityPost && <AISecurityBackground />}
     <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -145,17 +150,19 @@ export default async function BlogPage({ params }) {
           </h1>
         </div>
         <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
-        <Image
-          src={blog.image.src}
-          placeholder="blur"
-          blurDataURL={blog.image.blurDataURL}
-          alt={blog.title}
-          width={blog.image.width}
-          height={blog.image.height}
-          className="aspect-square w-full h-full object-cover object-center"
-          priority
-          sizes="100vw"
-        />
+        {blog.image && (
+          <Image
+            src={blog.image.src}
+            placeholder="blur"
+            blurDataURL={blog.image.blurDataURL}
+            alt={blog.title}
+            width={blog.image.width}
+            height={blog.image.height}
+            className="aspect-square w-full h-full object-cover object-center"
+            priority
+            sizes="100vw"
+          />
+        )}
       </div>
       <BlogDetails blog={blog} slug={params.slug} />
 

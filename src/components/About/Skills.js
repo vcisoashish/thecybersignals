@@ -1,17 +1,34 @@
 const SkillList = [
-  "next.js",
-  "tailwind css",
-  "figma",
-  "javaScript",
-  "web design",
-  "Gatsby.js",
-  "strapi",
-  "firebase",
-  "generative AI",
-  "wireframing",
-  "SEO",
-  "framer motion",
-  "sanity",
+  "AI-Driven Deepfake Social Engineering",
+  "Generative AI Security Governance",
+  "AI-Agent Identity & Lifecycle Management",
+  "AI Model Poisoning & Supply-Chain Attacks",
+  "Quantum-Safe Blockchain Bridges",
+  "Web3 Wallet & Smart-Contract Security",
+  "Decentralized Identity (DID) & Zero-Knowledge Proofs",
+  "Confidential AI Training on Blockchain",
+  "Tokenized Zero-Trust Access",
+  "Post-Quantum NFT & Token Standards",
+  "AI-Augmented Board-Level Risk Metrics",
+  "Gen AI Code-SecOps Pipeline",
+  "AI-Generated Threat-Intel Briefings for CEOs",
+  "Blockchain-Based Audit & Compliance Ledger",
+  "AI-Optimized Cloud Cost-Security Balance",
+  "Web3 Decentralized Data Warehousing",
+  "AI-Driven ESG Cyber-Risk Scoring",
+  "Generative AI Incident-Response Playbooks",
+  "Quantum-Safe DAO Governance",
+  "AI-Powered Secure Remote Work Fabric",
+  "Tokenized Cyber-Insurance Smart Contracts",
+  "AI-Enhanced M&A Cyber Due-Diligence",
+  "Web3 Secure Micropayment Channels",
+  "Gen AI Secure Software Bill of Materials (SBOM)",
+  "AI-Monitored Real-Time Fraud Detection",
+  "Blockchain-Backed Immutable Logging",
+  "AI-Assisted Secure 5G Network Slicing",
+  "Quantum-Resistant Web3 Identity Vaults",
+  "AI-Driven Secure Edge-AI Orchestration",
+  "Generative AI Boardroom Cyber Wargames"
 ];
 
 const Skills = () => {
@@ -19,14 +36,14 @@ const Skills = () => {
     <section className="w-full flex flex-col p-5 xs:p-10 sm:p-12 md:p-16 lg:p-20 border-b-2 border-solid border-dark dark:border-light
      text-dark dark:text-light">
       <span className="font-semibold text-lg sm:text-3xl md:text-4xl text-accent dark:text-accentDark">
-        I'm comfortable in...
+        I&apos;m comfortable in...
       </span>
-      <ul className="flex flex-wrap mt-8 justify-center  xs:justify-start">
+      <ul className="flex flex-wrap mt-8 justify-center xs:justify-start">
         {SkillList.map((item, index) => {
           return (
             <li
               key={index}
-              className="font-semibold inline-block capitalize text-base xs:text-lg sm:text-xl  md:text-2xl py-2 xs:py-3 sm:py-4 lg:py-5 px-4 xs:px-6 sm:px-8 lg:px-12 border-2 border-solid border-dark dark:border-light rounded mr-3 mb-3 xs:mr-4 xs:mb-4  md:mr-6 md:mb-6 hover:scale-105 transition-all ease duration-200 cursor-pointer dark:font-normal" 
+              className="font-semibold inline-block capitalize text-xs xs:text-sm sm:text-sm md:text-base py-1 xs:py-1.5 sm:py-2 lg:py-2 px-2 xs:px-3 sm:px-4 lg:px-5 border-2 border-solid border-dark dark:border-light rounded mr-2 mb-2 xs:mr-2 xs:mb-2 md:mr-3 md:mb-3 hover:scale-105 transition-all ease duration-200 cursor-pointer dark:font-normal" 
             >
               {item}
             </li>

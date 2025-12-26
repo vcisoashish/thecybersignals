@@ -1,20 +1,20 @@
 // please update required information
 const siteMetadata = {
-    title: 'Next.js Blog With Tailwind CSS and Contentlayer',
+    title: 'The Cyber Signals - Cybersecurity Insights & Analysis',
     author: 'The Cyber Signals',
-    headerTitle: 'Next.js Blog',
-    description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
+    headerTitle: 'The Cyber Signals',
+    description: 'Leading cybersecurity blog providing expert insights on AI security, zero trust, quantum cryptography, and emerging cyber threats. Stay ahead with professional analysis and strategic guidance.',
     language: 'en-us',
     theme: 'system', // system, dark or light
-    siteUrl: 'https://create-blog-with-nextjs.vercel.app', // your website URL
+    siteUrl: 'https://thecybersignals.vercel.app', // your website URL - UPDATE THIS AFTER DEPLOYMENT
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
-    email: 'codebucks27@gmail.com', 
-    github: 'https://github.com/vcisoashish',
+    email: 'contact@thecybersignals.online', 
+    github: 'https://github.com/thecybersignals-commits/cybersignal-samples',
     twitter: 'https://x.com/vcisoashish',
     facebook: 'https://facebook.com',
     youtube: 'https://youtube.com/codebucks',
-    linkedin: 'https://www.linkedin.com/in/architect-ashish/',
+    linkedin: 'https://linkedin.com/company/the-cyber-signals',
     dribbble: 'https://dribbble.com/vcisoashish',
     locale: 'en-US',
   }

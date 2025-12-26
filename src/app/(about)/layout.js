@@ -2,13 +2,16 @@ import InsightRoll from "@/src/components/About/InsightRoll";
 
 
 const insights = [
-    "20+ Projects Completed",
-    "3+ Years of Freelancing",
-    "99% Client Satisfaction",
-    "20K+ Subscribers",
-    "Authored In-Depth Course on Educative",
-    "Contributed as a Technical Course Reviewer 📝",
-    "Recipient of the Hackernoon Noonies Award 🏆",
+    "$4.88M → Average breach cost saved",
+    "$2.2M → AI-automation saving per incident",
+    "77% → Faster recovery with IR plan",
+    "50× → ROI of phishing training",
+    "351% → Recorded Future intel ROI",
+    "$300K/hr → Downtime cost avoided",
+    "80% → Attacks blocked by EDR",
+    "95% → Human-error breaches cut via training",
+    "25% → Cloud spend saved by secure rightsizing",
+    "209% → Brand-risk reduction ROI",
   ];
 
 export default function AboutLayout({ children }) {

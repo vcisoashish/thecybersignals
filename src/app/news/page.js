@@ -1,23 +1,36 @@
-import { blogs } from "@/.velite/generated";
-import { sortBlogs } from "@/src/utils";
-import BlogLayoutOne from "@/src/components/Blog/BlogLayoutOne";
-import BlogLayoutTwo from "@/src/components/Blog/BlogLayoutTwo";
+'use client';
 
-export const metadata = {
-  title: "News",
-  description: "Latest cybersecurity news, breaking security incidents, vulnerability disclosures, and industry updates.",
-};
+import { useState, useEffect } from 'react';
+import NewsAggregator from '@/src/components/News/NewsAggregator';
+import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
 
 export default function News() {
-  const sortedBlogs = sortBlogs(blogs);
-  const newsBlogs = sortedBlogs.filter(blog => 
-    blog.tags.some(tag => 
-      ['news', 'breaking', 'incident', 'vulnerability', 'breach', 'alert'].includes(tag.toLowerCase())
-    )
-  );
+  const [stats, setStats] = useState({
+    totalArticles: 0,
+    lastUpdate: null,
+    categories: 0
+  });
 
-  // If no specific news blogs, show recent blogs as news
-  const displayBlogs = newsBlogs.length > 0 ? newsBlogs : sortedBlogs;
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const response = await fetch('/api/news?limit=1');
+        const data = await response.json();
+        
+        if (data.success) {
+          setStats({
+            totalArticles: data.meta.total,
+            lastUpdate: data.meta.lastUpdated,
+            categories: 7 // We have 7 categories
+          });
+        }
+      } catch (error) {
+        console.error('Error fetching news stats:', error);
+      }
+    };
+
+    fetchStats();
+  }, []);
 
   return (
     <main className="w-full mb-16 flex flex-col items-center justify-center">
@@ -27,114 +40,132 @@ export default function News() {
           
           <div className="w-full lg:w-3/4 p-6 sm:p-8 md:p-12 lg:p-16 flex flex-col items-start justify-center z-0 text-light">
             <div className="inline-block py-2 sm:py-3 px-6 sm:px-10 bg-dark dark:bg-light text-light dark:text-dark rounded-full capitalize font-semibold border-2 border-solid border-light dark:border-dark hover:scale-105 transition-all ease duration-200 text-sm sm:text-base">
-              Breaking News
+              Live News Feed
             </div>
             <h1 className="font-bold capitalize text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-6">
               <span className="bg-gradient-to-r from-accent to-accent dark:from-accentDark/50 dark:to-accentDark/50 bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500">
-                Cybersecurity News & Updates
+                Real-Time Cybersecurity News
               </span>
             </h1>
             <p className="mt-4 md:text-lg lg:text-xl font-in">
-              Stay informed with the latest cybersecurity news, breaking security incidents, vulnerability disclosures, and critical industry updates.
+              Stay ahead with automatically updated cybersecurity, AI, and quantum computing news from trusted sources worldwide.
             </p>
+            
+            {/* Live stats */}
+            <div className="flex flex-wrap gap-6 mt-6 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span>Live Updates</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>📊</span>
+                <span>{stats.totalArticles}+ Articles</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span>🏷️</span>
+                <span>{stats.categories} Categories</span>
+              </div>
+              {stats.lastUpdate && (
+                <div className="flex items-center gap-2">
+                  <span>🕒</span>
+                  <span>Updated {new Date(stats.lastUpdate).toLocaleTimeString()}</span>
+                </div>
+              )}
+            </div>
           </div>
         </article>
       </div>
 
-      {/* Breaking News Section */}
+      {/* News Categories Overview */}
       <section className="w-full mt-16 px-5 sm:px-10">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 mb-8 rounded-r-lg">
-            <div className="flex items-center mb-4">
-              <div className="w-3 h-3 bg-red-500 rounded-full mr-3 animate-pulse"></div>
-              <h2 className="text-xl font-bold text-red-700 dark:text-red-400">Breaking News</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-dark dark:text-light mb-8 text-center">
+            News Categories
+          </h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-12">
+            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark/20 dark:border-light/20 text-center hover:shadow-lg transition-shadow">
+              <div className="text-2xl mb-2">🔒</div>
+              <h3 className="font-bold text-dark dark:text-light mb-1 text-sm">Cybersecurity</h3>
+              <p className="text-xs text-dark/70 dark:text-light/70">Security threats & defense</p>
             </div>
-            <h3 className="text-lg font-semibold text-dark dark:text-light mb-2">
-              Major Security Incident Affects Global Infrastructure
-            </h3>
-            <p className="text-dark/70 dark:text-light/70 mb-4">
-              A sophisticated cyber attack targeting critical infrastructure has been detected across multiple countries. 
-              Security teams are working to assess the impact and implement countermeasures.
-            </p>
-            <div className="flex items-center text-sm text-red-600 dark:text-red-400">
-              <span className="mr-4">🕒 2 hours ago</span>
-              <span>🔥 High Priority</span>
+            
+            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark/20 dark:border-light/20 text-center hover:shadow-lg transition-shadow">
+              <div className="text-2xl mb-2">🤖</div>
+              <h3 className="font-bold text-dark dark:text-light mb-1 text-sm">AI & ML</h3>
+              <p className="text-xs text-dark/70 dark:text-light/70">Artificial intelligence news</p>
             </div>
-          </div>
-
-          {/* News Categories */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark dark:border-light text-center">
+            
+            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark/20 dark:border-light/20 text-center hover:shadow-lg transition-shadow">
+              <div className="text-2xl mb-2">⚛️</div>
+              <h3 className="font-bold text-dark dark:text-light mb-1 text-sm">Quantum</h3>
+              <p className="text-xs text-dark/70 dark:text-light/70">Quantum computing advances</p>
+            </div>
+            
+            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark/20 dark:border-light/20 text-center hover:shadow-lg transition-shadow">
               <div className="text-2xl mb-2">🚨</div>
-              <h3 className="font-bold text-dark dark:text-light mb-1">Security Alerts</h3>
-              <p className="text-sm text-dark/70 dark:text-light/70">Critical vulnerabilities & threats</p>
+              <h3 className="font-bold text-dark dark:text-light mb-1 text-sm">Breaches</h3>
+              <p className="text-xs text-dark/70 dark:text-light/70">Data breach reports</p>
             </div>
-            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark dark:border-light text-center">
-              <div className="text-2xl mb-2">💼</div>
-              <h3 className="font-bold text-dark dark:text-light mb-1">Industry News</h3>
-              <p className="text-sm text-dark/70 dark:text-light/70">Business & regulatory updates</p>
-            </div>
-            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark dark:border-light text-center">
+            
+            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark/20 dark:border-light/20 text-center hover:shadow-lg transition-shadow">
               <div className="text-2xl mb-2">🔍</div>
-              <h3 className="font-bold text-dark dark:text-light mb-1">Research</h3>
-              <p className="text-sm text-dark/70 dark:text-light/70">Latest security research findings</p>
+              <h3 className="font-bold text-dark dark:text-light mb-1 text-sm">Vulnerabilities</h3>
+              <p className="text-xs text-dark/70 dark:text-light/70">CVE & security flaws</p>
             </div>
-            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark dark:border-light text-center">
-              <div className="text-2xl mb-2">⚡</div>
-              <h3 className="font-bold text-dark dark:text-light mb-1">Incidents</h3>
-              <p className="text-sm text-dark/70 dark:text-light/70">Breach reports & analysis</p>
+            
+            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark/20 dark:border-light/20 text-center hover:shadow-lg transition-shadow">
+              <div className="text-2xl mb-2">🔐</div>
+              <h3 className="font-bold text-dark dark:text-light mb-1 text-sm">Ransomware</h3>
+              <p className="text-xs text-dark/70 dark:text-light/70">Ransomware attacks</p>
+            </div>
+            
+            <div className="bg-light dark:bg-dark p-4 rounded-lg border border-solid border-dark/20 dark:border-light/20 text-center hover:shadow-lg transition-shadow">
+              <div className="text-2xl mb-2">📰</div>
+              <h3 className="font-bold text-dark dark:text-light mb-1 text-sm">All News</h3>
+              <p className="text-xs text-dark/70 dark:text-light/70">Complete feed</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Latest News Articles */}
-      <section className="w-full mt-8 px-5 sm:px-10">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark dark:text-light mb-8 text-center">
-            Latest News
-          </h2>
-          
-          {displayBlogs.length > 0 && (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {displayBlogs.slice(0, 6).map((blog, index) => (
-                <article key={blog.slug} className="group">
-                  <BlogLayoutTwo blog={blog} />
-                </article>
-              ))}
-            </div>
-          )}
-
-          {displayBlogs.length === 0 && (
-            <div className="text-center py-16">
-              <div className="text-6xl mb-4">📰</div>
-              <h3 className="text-xl font-bold text-dark dark:text-light mb-2">No News Articles Yet</h3>
-              <p className="text-dark/70 dark:text-light/70">
-                We&apos;re working on bringing you the latest cybersecurity news. Check back soon!
-              </p>
-            </div>
-          )}
-        </div>
+      {/* News Aggregator */}
+      <section className="w-full mt-8">
+        <NewsAggregator />
       </section>
 
       {/* Newsletter Signup */}
       <section className="w-full mt-16 px-5 sm:px-10">
         <div className="max-w-4xl mx-auto bg-accent/10 dark:bg-accentDark/10 p-8 rounded-lg text-center">
           <h2 className="text-2xl font-bold text-dark dark:text-light mb-4">
-            Stay Updated with Security News
+            Never Miss Critical Security News
           </h2>
           <p className="text-dark/70 dark:text-light/70 mb-6">
-            Get the latest cybersecurity news and alerts delivered directly to your inbox.
+            Get real-time cybersecurity alerts and breaking news delivered directly to your inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="flex-1 px-4 py-2 rounded-full border border-dark dark:border-light bg-light dark:bg-dark text-dark dark:text-light"
+            <NewsletterButton 
+              className="px-6 py-3 bg-accent text-light rounded-full font-semibold hover:scale-105 transition-all ease duration-200"
+              text="Subscribe to News Alerts"
+              source="news-page-alerts"
+              showInput={true}
+              inputPlaceholder="Enter email for security news alerts"
             />
-            <button className="px-6 py-2 bg-accent text-light rounded-full font-semibold hover:scale-105 transition-all ease duration-200">
-              Subscribe
-            </button>
+          </div>
+          
+          <div className="flex justify-center gap-6 mt-6 text-sm text-dark/60 dark:text-light/60">
+            <div className="flex items-center gap-2">
+              <span>⚡</span>
+              <span>Real-time alerts</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>🔒</span>
+              <span>Privacy protected</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>📱</span>
+              <span>Mobile optimized</span>
+            </div>
           </div>
         </div>
       </section>
