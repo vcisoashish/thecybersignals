@@ -8,3 +8,4 @@ export default function Home() {
     <HomeCoverSection blogs={blogs} />
   );
 }
+// Build trigger
