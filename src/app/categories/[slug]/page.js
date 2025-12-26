@@ -4,7 +4,14 @@ import Categories from "@/src/components/Blog/Categories";
 import { slug } from "github-slugger";
 import Link from "next/link";
 import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
+<<<<<<< HEAD
 import { getCleanBlogUrl } from "@/src/utils/urlMappings";
+=======
+<<<<<<< HEAD
+import { getCleanBlogUrl } from "@/src/utils/urlMappings";
+=======
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
 
 // const slugger = new GithubSlugger();
 
@@ -38,12 +45,24 @@ export async function generateMetadata({ params }) {
 const BlogDirectory = ({ blogs }) => {
   // Sort blogs by publication date (most recent first)
   const sortedBlogs = blogs
+<<<<<<< HEAD
     .filter(blog => blog && blog.isPublished && blog.publishedAt && blog.tags)
+=======
+<<<<<<< HEAD
+    .filter(blog => blog && blog.isPublished && blog.publishedAt && blog.tags)
+=======
+    .filter(blog => blog.isPublished)
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   // Group blogs by category
   const blogsByCategory = {};
   sortedBlogs.forEach(blog => {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
     if (blog.tags && Array.isArray(blog.tags)) {
       blog.tags.forEach(tag => {
         if (tag) {
@@ -57,6 +76,20 @@ const BlogDirectory = ({ blogs }) => {
         }
       });
     }
+<<<<<<< HEAD
+=======
+=======
+    blog.tags.forEach(tag => {
+      const categorySlug = slug(tag);
+      if (!blogsByCategory[categorySlug]) {
+        blogsByCategory[categorySlug] = [];
+      }
+      if (!blogsByCategory[categorySlug].some(b => b.slug === blog.slug)) {
+        blogsByCategory[categorySlug].push(blog);
+      }
+    });
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
   });
 
   // Format date function
@@ -82,7 +115,15 @@ const BlogDirectory = ({ blogs }) => {
         </p>
         <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mb-8">
           <p className="text-sm text-accent font-medium">
+<<<<<<< HEAD
             📚 Total Articles: {sortedBlogs.length} | 🏷️ Categories: {Object.keys(blogsByCategory).length} | 🔄 Updated: {sortedBlogs.length > 0 ? formatDate(sortedBlogs[0]?.publishedAt) : 'N/A'}
+=======
+<<<<<<< HEAD
+            📚 Total Articles: {sortedBlogs.length} | 🏷️ Categories: {Object.keys(blogsByCategory).length} | 🔄 Updated: {sortedBlogs.length > 0 ? formatDate(sortedBlogs[0]?.publishedAt) : 'N/A'}
+=======
+            📚 Total Articles: {sortedBlogs.length} | 🏷️ Categories: {Object.keys(blogsByCategory).length} | 🔄 Updated: {formatDate(sortedBlogs[0]?.publishedAt)}
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
           </p>
         </div>
       </div>
@@ -125,7 +166,15 @@ const BlogDirectory = ({ blogs }) => {
                     <span className="text-xs text-gray-500 dark:text-gray-400">
                       {formatDate(blog.publishedAt)}
                     </span>
+<<<<<<< HEAD
                     {blog.tags && blog.tags.slice(0, 2).map(tag => (
+=======
+<<<<<<< HEAD
+                    {blog.tags && blog.tags.slice(0, 2).map(tag => (
+=======
+                    {blog.tags.slice(0, 2).map(tag => (
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                       <Link 
                         key={tag}
                         href={`/categories/${slug(tag)}`}
@@ -135,7 +184,15 @@ const BlogDirectory = ({ blogs }) => {
                       </Link>
                     ))}
                   </div>
+<<<<<<< HEAD
                   <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
+=======
+<<<<<<< HEAD
+                  <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
+=======
+                  <Link href={`/blogs/${blog.slug}`} className="group-hover:text-accent transition-colors">
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     <h3 className="text-lg font-semibold mb-2 line-clamp-2">
                       {blog.title}
                     </h3>
@@ -144,14 +201,30 @@ const BlogDirectory = ({ blogs }) => {
                     {blog.description}
                   </p>
                   <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
+<<<<<<< HEAD
                     <span>By {blog.author || 'The Cyber Signals'}</span>
+=======
+<<<<<<< HEAD
+                    <span>By {blog.author || 'The Cyber Signals'}</span>
+=======
+                    <span>By {blog.author}</span>
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     <span>•</span>
                     <span>5 min read</span>
                   </div>
                 </div>
                 <div className="flex-shrink-0">
                   <Link 
+<<<<<<< HEAD
                     href={getCleanBlogUrl(blog.slug)}
+=======
+<<<<<<< HEAD
+                    href={getCleanBlogUrl(blog.slug)}
+=======
+                    href={`/blogs/${blog.slug}`}
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     className="inline-flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent/90 transition-colors text-sm font-medium"
                   >
                     Read Article →
@@ -192,7 +265,15 @@ const BlogDirectory = ({ blogs }) => {
                           {formatDate(blog.publishedAt)}
                         </span>
                       </div>
+<<<<<<< HEAD
                       <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
+=======
+<<<<<<< HEAD
+                      <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
+=======
+                      <Link href={`/blogs/${blog.slug}`} className="group-hover:text-accent transition-colors">
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                         <h3 className="font-semibold mb-2 line-clamp-2 text-sm">
                           {blog.title}
                         </h3>
@@ -202,10 +283,23 @@ const BlogDirectory = ({ blogs }) => {
                       </p>
                       <div className="flex items-center justify-between">
                         <span className="text-xs text-gray-500 dark:text-gray-400">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                           By {blog.author || 'The Cyber Signals'}
                         </span>
                         <Link 
                           href={getCleanBlogUrl(blog.slug)}
+<<<<<<< HEAD
+=======
+=======
+                          By {blog.author}
+                        </span>
+                        <Link 
+                          href={`/blogs/${blog.slug}`}
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                           className="text-xs text-accent hover:text-accent/80 font-medium"
                         >
                           Read →

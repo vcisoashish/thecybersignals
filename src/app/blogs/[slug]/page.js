@@ -7,7 +7,14 @@ import { slug as slugify } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import AISecurityBackground from "@/src/components/AISecurityBackground";
+<<<<<<< HEAD
 import { getCleanBlogUrl } from "@/src/utils/urlMappings";
+=======
+<<<<<<< HEAD
+import { getCleanBlogUrl } from "@/src/utils/urlMappings";
+=======
+>>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
+>>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
 
 export async function generateStaticParams() {
   return blogs.map((blog) => ({ slug: blog.slug }));
