@@ -6,6 +6,16 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Dark theme background handling */
+html.dark body {
+  background-color: rgb(15 23 42); /* dark background */
+}
+
+/* Footer light background */
+footer {
+  background-color: #f3f4f6 !important; /* Force light gray background */
+}
+
 /* Marquee animation for breaking news */
 @keyframes marquee {
   0% {
@@ -18,6 +28,337 @@ html{
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
+}
+
+/* Blink animation for trending text */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+/* Slow spin animation for contact button */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+/* Hacker background animations */
+@keyframes matrix-rain {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes circuit-pulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes data-flow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.matrix-rain {
+  animation: matrix-rain 8s linear infinite;
+}
+
+.circuit-pulse {
+  animation: circuit-pulse 3s ease-in-out infinite;
+}
+
+.data-flow {
+  animation: data-flow 15s linear infinite;
+}
+
+/* Animation delay classes */
+.delay-0 { animation-delay: 0s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-1000 { animation-delay: 1s; }
+.delay-1500 { animation-delay: 1.5s; }
+.delay-2000 { animation-delay: 2s; }
+.delay-2500 { animation-delay: 2.5s; }
+.delay-3000 { animation-delay: 3s; }
+.delay-4000 { animation-delay: 4s; }
+.delay-6000 { animation-delay: 6s; }
+.delay-9000 { animation-delay: 9s; }
+
+/* Hacker background pattern */
+.hacker-bg {
+  background-image: 
+    linear-gradient(90deg, rgba(0, 255, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0, 255, 0, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 0, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(0, 255, 0, 0.02) 0%, transparent 50%);
+  background-size: 50px 50px, 50px 50px, 300px 300px, 400px 400px, 200px 200px;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+}
+
+/* AI Security Background Animations */
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes threat-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.3);
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+}
+
+@keyframes neural-connection {
+  0% {
+    stroke-dasharray: 0, 100;
+    opacity: 0.1;
+  }
+  50% {
+    stroke-dasharray: 50, 100;
+    opacity: 0.6;
+  }
+  100% {
+    stroke-dasharray: 100, 100;
+    opacity: 0.1;
+  }
+}
+
+@keyframes threat-connection {
+  0% {
+    stroke-dasharray: 0, 100;
+    opacity: 0.2;
+  }
+  50% {
+    stroke-dasharray: 50, 100;
+    opacity: 0.8;
+  }
+  100% {
+    stroke-dasharray: 100, 100;
+    opacity: 0.2;
+  }
+}
+
+@keyframes ai-data-stream {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes security-barrier {
+  0%, 100% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes threat-indicator {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes ai-process {
+  0%, 100% {
+    height: 0.5rem;
+    opacity: 0.2;
+  }
+  50% {
+    height: 2rem;
+    opacity: 0.8;
+  }
+}
+
+@keyframes security-shield {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 0.3;
+  }
+}
+
+@keyframes binary-float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+    opacity: 0.1;
+  }
+}
+
+/* AI Security Background Classes */
+.neural-pulse {
+  animation: neural-pulse 4s ease-in-out infinite;
+}
+
+.threat-pulse {
+  animation: threat-pulse 3s ease-in-out infinite;
+}
+
+.neural-connection {
+  animation: neural-connection 6s linear infinite;
+  stroke-dasharray: 0, 100;
+}
+
+.threat-connection {
+  animation: threat-connection 5s linear infinite;
+  stroke-dasharray: 0, 100;
+}
+
+.ai-data-stream {
+  animation: ai-data-stream 12s linear infinite;
+}
+
+.security-barrier {
+  animation: security-barrier 8s ease-in-out infinite;
+}
+
+.threat-indicator {
+  animation: threat-indicator 10s linear infinite;
+}
+
+.ai-process {
+  animation: ai-process 3s ease-in-out infinite;
+}
+
+.security-shield {
+  animation: security-shield 15s linear infinite;
+}
+
+.binary-float {
+  animation: binary-float 20s ease-in-out infinite;
+}
+
+/* AI Security Background Pattern */
+.ai-security-bg {
+  background-image: 
+    linear-gradient(90deg, rgba(59, 130, 246, 0.02) 1px, transparent 1px),
+    linear-gradient(rgba(34, 197, 94, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 25%, rgba(239, 68, 68, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 25% 75%, rgba(34, 197, 94, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.03) 0%, transparent 50%);
+  background-size: 60px 60px, 60px 60px, 400px 400px, 350px 350px, 300px 300px, 450px 450px;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+}
+
+/* Cyber Prediction Popup Animations */
+@keyframes cyber-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes cyber-glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(6, 182, 212, 0.5);
+  }
+}
+
+@keyframes cyber-button-hover {
+  0% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(6, 182, 212, 0.3);
+  }
+}
+
+.cyber-pulse {
+  animation: cyber-pulse 2s ease-in-out infinite;
+}
+
+.cyber-glow {
+  animation: cyber-glow 3s ease-in-out infinite;
+}
+
+.cyber-button {
+  transition: all 0.3s ease;
+}
+
+.cyber-button:hover {
+  animation: cyber-button-hover 0.3s ease-in-out forwards;
 }
 
 /* Line clamp utilities */

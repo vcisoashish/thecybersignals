@@ -18,7 +18,7 @@ const blog = s
     publishedAt: s.isodate(),
     updatedAt: s.isodate(),
     description: s.string(), 
-    image: s.image(),
+    image: s.image().optional(),
     isPublished: s.boolean().default(true),
     author: s.string(),
     tags: s.array(s.string()),
@@ -32,10 +32,12 @@ const blog = s
       url: `/blogs/${data.slug}`,
       readingTime: readingTime(data.body),
     //   toc: headings,
-      image: {
-        ...data.image,
-        src: data.image.src.replace("/static", "/blogs"),
-      },
+      ...(data.image && {
+        image: {
+          ...data.image,
+          src: data.image.src.replace("/static", "/blogs"),
+        }
+      }),
     }
   })
 

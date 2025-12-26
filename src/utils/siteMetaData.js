@@ -10,11 +10,11 @@ const siteMetadata = {
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'codebucks27@gmail.com', 
-    github: 'https://github.com/vcisoashish',
+    github: 'https://github.com/thecybersignals-commits/cybersignal-samples',
     twitter: 'https://x.com/vcisoashish',
     facebook: 'https://facebook.com',
     youtube: 'https://youtube.com/codebucks',
-    linkedin: 'https://www.linkedin.com/in/architect-ashish/',
+    linkedin: 'https://linkedin.com/company/the-cyber-signals',
     dribbble: 'https://dribbble.com/vcisoashish',
     locale: 'en-US',
   }

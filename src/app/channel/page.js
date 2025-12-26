@@ -1,3 +1,5 @@
+import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
+
 export const metadata = {
   title: "Channel",
   description: "The Cyber Signals Channel - Your hub for cybersecurity content, live streams, and interactive security discussions.",
@@ -115,9 +117,13 @@ export default function Channel() {
               and join our growing community of security professionals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-accent text-light rounded-full font-semibold hover:scale-105 transition-all ease duration-200">
-                Subscribe Now
-              </button>
+              <NewsletterButton 
+                className="px-8 py-3 bg-accent text-light rounded-full font-semibold hover:scale-105 transition-all ease duration-200"
+                text="Subscribe Now"
+                source="channel-page"
+                showInput={true}
+                inputPlaceholder="Enter your email to subscribe"
+              />
               <button className="px-8 py-3 border-2 border-accent text-accent rounded-full font-semibold hover:bg-accent hover:text-light transition-all ease duration-200">
                 View Schedule
               </button>
