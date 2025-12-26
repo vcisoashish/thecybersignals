@@ -297,11 +297,11 @@ export default function EmailSetup() {
                       <div className="mb-3">
                         <p className="text-red-600 dark:text-red-400 text-sm font-medium mb-1">Resend Setup:</p>
                         <ul className="text-red-600 dark:text-red-400 text-xs space-y-1 ml-4">
-                          {Object.entries(testResult.instructions.resend).map(([key, value]) => (
+                          {testResult.instructions?.resend ? Object.entries(testResult.instructions.resend).map(([key, value]) => (
                             <li key={key}>
                               <strong>{key.replace('step', 'Step ')}:</strong> {value}
                             </li>
-                          ))}
+                          )) : null}
                         </ul>
                       </div>
                     )}
@@ -309,21 +309,21 @@ export default function EmailSetup() {
                       <div className="mb-3">
                         <p className="text-red-600 dark:text-red-400 text-sm font-medium mb-1">Gmail Setup:</p>
                         <ul className="text-red-600 dark:text-red-400 text-xs space-y-1 ml-4">
-                          {Object.entries(testResult.instructions.gmail).map(([key, value]) => (
+                          {testResult.instructions?.gmail ? Object.entries(testResult.instructions.gmail).map(([key, value]) => (
                             <li key={key}>
                               <strong>{key.replace('step', 'Step ')}:</strong> {value}
                             </li>
-                          ))}
+                          )) : null}
                         </ul>
                       </div>
                     )}
                     {!testResult.instructions.resend && !testResult.instructions.gmail && (
                       <ul className="text-red-600 dark:text-red-400 text-xs space-y-1">
-                        {Object.entries(testResult.instructions).map(([key, value]) => (
+                        {testResult.instructions ? Object.entries(testResult.instructions).map(([key, value]) => (
                           <li key={key}>
                             <strong>{key.replace('step', 'Step ')}:</strong> {value}
                           </li>
-                        ))}
+                        )) : null}
                       </ul>
                     )}
                   </div>
