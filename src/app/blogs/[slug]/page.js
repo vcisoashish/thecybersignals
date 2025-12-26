@@ -6,6 +6,7 @@ import { blogs } from '@/.velite/generated'
 import { slug as slugify } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { getCleanBlogUrl } from "@/src/utils/urlMappings";
 import AISecurityBackground from "@/src/components/AISecurityBackground";
 
 export async function generateStaticParams() {
