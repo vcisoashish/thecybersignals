@@ -2,10 +2,10 @@
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -13,7 +13,7 @@
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -21,7 +21,7 @@
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -29,7 +29,7 @@
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -37,7 +37,7 @@
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -45,7 +45,7 @@
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -53,7 +53,7 @@
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -70,10 +70,10 @@ import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -81,7 +81,7 @@ import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -89,7 +89,7 @@ import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -97,7 +97,7 @@ import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -105,7 +105,7 @@ import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -113,7 +113,7 @@ import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -121,7 +121,7 @@ import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -141,10 +141,10 @@ const BreakingNews = () => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -152,7 +152,7 @@ const BreakingNews = () => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -160,7 +160,7 @@ const BreakingNews = () => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -168,7 +168,7 @@ const BreakingNews = () => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -176,7 +176,7 @@ const BreakingNews = () => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -184,7 +184,7 @@ const BreakingNews = () => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -192,7 +192,7 @@ const BreakingNews = () => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -209,10 +209,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -220,7 +220,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -228,7 +228,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -236,7 +236,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -244,7 +244,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -252,7 +252,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -260,7 +260,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -288,10 +288,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -299,7 +299,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -307,7 +307,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -315,7 +315,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -323,7 +323,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -331,7 +331,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -339,7 +339,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -359,10 +359,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -370,7 +370,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -378,7 +378,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -386,7 +386,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -394,7 +394,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -402,7 +402,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -410,7 +410,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -429,10 +429,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -440,7 +440,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -448,7 +448,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -456,7 +456,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -464,7 +464,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -472,7 +472,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -480,7 +480,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -508,10 +508,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -519,7 +519,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -527,7 +527,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -535,7 +535,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -543,7 +543,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -551,7 +551,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -559,7 +559,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -578,10 +578,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -589,7 +589,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -597,7 +597,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -605,7 +605,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -613,7 +613,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -621,7 +621,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -629,7 +629,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -642,10 +642,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -653,7 +653,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -661,7 +661,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -669,7 +669,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -677,7 +677,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -685,7 +685,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -693,7 +693,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -706,10 +706,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -717,7 +717,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -725,7 +725,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -733,7 +733,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -741,7 +741,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -749,7 +749,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -757,7 +757,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -822,10 +822,10 @@ const BlogDirectory = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -833,7 +833,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -841,7 +841,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -849,7 +849,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -857,7 +857,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -865,7 +865,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -873,7 +873,7 @@ const BlogDirectory = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -911,10 +911,10 @@ const CyberSignalJournal = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -922,7 +922,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -930,7 +930,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -938,7 +938,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -946,7 +946,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -954,7 +954,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -962,7 +962,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -978,10 +978,10 @@ const CyberSignalJournal = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -989,7 +989,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -997,7 +997,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1005,7 +1005,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1013,7 +1013,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1021,7 +1021,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1029,7 +1029,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1068,10 +1068,10 @@ const CyberSignalJournal = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1079,7 +1079,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1087,7 +1087,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1095,7 +1095,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1103,7 +1103,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1111,7 +1111,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1119,7 +1119,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1156,10 +1156,10 @@ const CyberSignalJournal = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1167,7 +1167,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1175,7 +1175,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1183,7 +1183,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1191,7 +1191,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1199,7 +1199,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1207,7 +1207,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1240,10 +1240,10 @@ const CyberSignalJournal = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1251,7 +1251,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1259,7 +1259,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1267,7 +1267,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1275,7 +1275,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1283,7 +1283,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1291,7 +1291,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1319,10 +1319,10 @@ const CyberSignalJournal = ({ blogs }) => {
 
       {/* Categories */}
       <div>
-        <h2 className=text-2xl font-bold mb-6>Categories</h2>
-        <div className=grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4>
+        <h2 className="text-2xl font-bold mb-6">Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link 
-            href=/categories/offensive-operations
+            href="/categories/offensive-operations"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1330,7 +1330,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/ai-security-adversarial-ml
+            href="/categories/ai-security-adversarial-ml"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1338,7 +1338,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cloud-infrastructure-defense
+            href="/categories/cloud-infrastructure-defense"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1346,7 +1346,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/quantum-future-encryption
+            href="/categories/quantum-future-encryption"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1354,7 +1354,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-briefing-news-intel
+            href="/categories/cyber-briefing-news-intel"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1362,7 +1362,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/strategy-law-compliance
+            href="/categories/strategy-law-compliance"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
@@ -1370,7 +1370,7 @@ const CyberSignalJournal = ({ blogs }) => {
             </h3>
           </Link>
           <Link 
-            href=/categories/cyber-signal-academy
+            href="/categories/cyber-signal-academy"
             className=bg-light dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-accent hover:shadow-lg transition-all duration-200 group
           >
             <h3 className=font-semibold group-hover:text-accent transition-colors>
