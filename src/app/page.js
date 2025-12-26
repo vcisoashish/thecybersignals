@@ -6,13 +6,6 @@ import { slug } from "github-slugger";
 import { useEffect, useState } from "react";
 import NewsletterButton from "@/src/components/Newsletter/NewsletterButton";
 import CyberPredictionPopup from "@/src/components/CyberPredictionPopup";
-<<<<<<< HEAD
-import { getCleanBlogUrl } from "@/src/utils/urlMappings";
-=======
-<<<<<<< HEAD
-import { getCleanBlogUrl } from "@/src/utils/urlMappings";
-=======
->>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
 >>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
 
 // Breaking News Component with dynamic data fetching
@@ -282,14 +275,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                       </Link>
                     ))}
                   </div>
-<<<<<<< HEAD
-                  <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
-=======
-<<<<<<< HEAD
-                  <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
-=======
-                  <Link href={`/blogs/${blog.slug}`} className="group-hover:text-accent transition-colors">
->>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
 >>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     <h3 className="text-sm font-semibold mb-1 line-clamp-1">
                       {blog.title}
@@ -302,14 +287,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                 </div>
                 <div className="flex-shrink-0">
                   <Link 
-<<<<<<< HEAD
-                    href={getCleanBlogUrl(blog.slug)}
-=======
-<<<<<<< HEAD
-                    href={getCleanBlogUrl(blog.slug)}
-=======
-                    href={`/blogs/${blog.slug}`}
->>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
 >>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                     className="inline-flex items-center px-2 py-1 bg-accent text-white rounded text-xs font-medium hover:bg-accent/90 transition-colors"
                   >
@@ -352,14 +329,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                           {formatDate(blog.publishedAt)}
                         </span>
                       </div>
-<<<<<<< HEAD
-                      <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
-=======
-<<<<<<< HEAD
-                      <Link href={getCleanBlogUrl(blog.slug)} className="group-hover:text-accent transition-colors">
-=======
-                      <Link href={`/blogs/${blog.slug}`} className="group-hover:text-accent transition-colors">
->>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
 >>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                         <h3 className="font-semibold mb-1 line-clamp-2 text-xs">
                           {blog.title}
@@ -373,14 +342,6 @@ const BlogDirectory = ({ blogs, onStatsClick }) => {
                           {blog.author}
                         </span>
                         <Link 
-<<<<<<< HEAD
-                          href={getCleanBlogUrl(blog.slug)}
-=======
-<<<<<<< HEAD
-                          href={getCleanBlogUrl(blog.slug)}
-=======
-                          href={`/blogs/${blog.slug}`}
->>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
 >>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                           className="text-xs text-accent hover:text-accent/80 font-medium"
                         >
@@ -527,14 +488,6 @@ const CyberSignalJournal = ({ blogs }) => {
         <div className="space-y-3">
           {featuredBlogs.map((blog, index) => (
             <div key={blog.slug} className="group">
-<<<<<<< HEAD
-              <Link href={getCleanBlogUrl(blog.slug)} className="block p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-accent/5 hover:border-accent border border-transparent transition-all duration-200">
-=======
-<<<<<<< HEAD
-              <Link href={getCleanBlogUrl(blog.slug)} className="block p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-accent/5 hover:border-accent border border-transparent transition-all duration-200">
-=======
-              <Link href={`/blogs/${blog.slug}`} className="block p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-accent/5 hover:border-accent border border-transparent transition-all duration-200">
->>>>>>> ad7c74605570f2289438cce6c385eca92034adfd
 >>>>>>> fc484a5f080adafcedeb8ff6065f630d0c8d4733
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
